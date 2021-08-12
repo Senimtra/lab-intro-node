@@ -30,7 +30,16 @@ class SortedList {
     return this.items[pos];
   }
 
-  max() { }
+  // ########################
+  // ## Iteration 4: max() ##
+  // ########################
+
+  max() {
+    if (!this.items.length) {
+      throw new Error('EmptySortedList');
+    }
+    return Math.max(...this.items);
+  }
 
   min() { }
 
