@@ -41,7 +41,16 @@ class SortedList {
     return Math.max(...this.items);
   }
 
-  min() { }
+  // ########################
+  // ## Iteration 5: min() ##
+  // ########################
+
+  min() {
+    if (!this.items.length) {
+      throw new Error('EmptySortedList');
+    }
+    return Math.min(...this.items);
+  }
 
   sum() { }
 
