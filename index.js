@@ -52,7 +52,11 @@ class SortedList {
     return Math.min(...this.items);
   }
 
-  sum() { }
+  // ##############################
+  // ## Bonus Iteration 6: sum() ##
+  // ##############################
+
+  sum = () => this.items.reduce((sum, el) => sum + el, 0);
 
   avg() { }
 }
